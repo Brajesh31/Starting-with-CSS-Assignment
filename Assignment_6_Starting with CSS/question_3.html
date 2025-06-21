@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #name {
+            background-color: #d7eefd;
+        }
+        #email {
+            background-color: #e7d7fd;
+        }
+        #gender {
+            background-color: #c4fde3;
+        }
+        #message {
+            background-color: #fdd7e9;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .custom-section {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+
+        .terms-checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .terms-checkbox input {
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <title>Styled Form</title>
+</head>
+<body>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <div class="terms-checkbox">
+            <input type="checkbox" id="terms" name="terms" required style="width: 20%;
+            padding: 0px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: none;
+            box-sizing: content-box;">
+            <label for="terms" style="width: 80%; font-size: 0.95rem;">I agree to the <a href="#">Terms and Conditions</a></label>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

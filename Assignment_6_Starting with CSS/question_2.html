@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEM Example</title>
+  <style>
+    /* BEM Naming Convention */
+    .block {
+      /* Shared styles for all paragraphs */
+      margin-bottom: 20px;
+    }
+
+    .block__paragraph1 {
+      /* Styles for the first paragraph */
+      color: #007bff;
+    }
+
+    .block__paragraph2 {
+      /* Styles for the second paragraph */
+      color: #28a745;
+    }
+
+    .block__paragraph3 {
+      /* Styles for the third paragraph */
+      color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="block">
+    <p class="block__paragraph1">This is the first paragraph.</p>
+  </div>
+
+  <div class="block">
+    <p class="block__paragraph2">This is the second paragraph.</p>
+  </div>
+
+  <div class="block">
+    <p class="block__paragraph3">This is the third paragraph.</p>
+  </div>
+
+
+  <h2>Explanation</h2>
+  <ul>
+    <li>I've used the BEM (Block Element Modifier) naming convention to create class names.</li>
+    <li>The "block" class represents the overall container or block for each paragraph.</li>
+    <li>Each paragraph is an element inside the block and has a class name that follows the pattern "block__element." In this case, the elements are paragraphs, and their class names are "block__paragraph1," "block__paragraph2," and "block__paragraph3."</li>
+    <li>The shared styles for all paragraphs are applied to the "block" class, while the specific styles for each paragraph are applied to their respective element classes. In this example, each paragraph has a different text color.</li>
+    <li>This approach helps to keep the CSS organized and makes it clear which styles are shared and which are specific to certain elements.</li>
+  </ul>
+
+</body>
+</html>
